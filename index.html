@@ -1,11 +1,415 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>La Ciencia del Qi</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Ciencia del qì</title>
+  <meta name="description" content="Institución de formación e investigación científica en zhìnéng qìgōng. Teoría, eventos, investigación y práctica." />
+  <meta name="theme-color" content="#0b0b0c" />
+
+  <!-- SEO básico -->
+  <link rel="canonical" href="https://www.lacienciadelqui.com/" />
+  <meta property="og:title" content="La Ciencia del qì" />
+  <meta property="og:description" content="Formación, investigación científica y difusión de zhìnéng qìgōng." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.lacienciadelqui.com/" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+
 <body>
-  <h1>La Ciencia del Qi</h1>
-  <p>Bienvenido a nuestro sitio informativo.</p>
+  <!-- Skip link accesibilidad -->
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir a inicio">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">La Ciencia del qì</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          Menú
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a href="#inicio" data-i18n="nav.home">Inicio</a>
+          <a href="#ciencia" data-i18n="nav.science">La ciencia del qì</a>
+          <a href="#eventos" data-i18n="nav.events">Eventos</a>
+          <a href="#investigacion" data-i18n="nav.research">Investigación</a>
+          <a href="#instructora" data-i18n="nav.instructor">Tu instructora</a>
+          <a href="#empieza" data-i18n="nav.start">Empieza hoy</a>
+          <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+
+          <div class="nav__divider" aria-hidden="true"></div>
+
+          <button class="lang" id="langToggle" aria-label="Cambiar idioma">
+            <span id="langLabel">ES</span> · EN
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="kicker" data-i18n="hero.kicker">Difusión · Formación · Investigación científica</p>
+          <h1 data-i18n="hero.title">La Ciencia del qì</h1>
+          <p class="lead" data-i18n="hero.lead">
+            Institución de Formación e Investigación Científica en zhìnéng qìgōng: filosofía de vida china que, a través
+            de meditaciones, movimientos, sonidos y experimentos, potencia capacidades humanas.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#empieza" data-i18n="hero.ctaPrimary">Empezar a practicar</a>
+            <a class="btn btn--ghost" href="#investigacion" data-i18n="hero.ctaSecondary">Ver investigación</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="pill" data-i18n="hero.meta1">Talleres en ES / EN</div>
+            <div class="pill" data-i18n="hero.meta2">En línea y presenciales</div>
+            <div class="pill" data-i18n="hero.meta3">Artículos y PDFs descargables</div>
+          </div>
+        </div>
+
+        <div class="hero__panel" aria-hidden="true">
+          <div class="panel">
+            <div class="panel__line"></div>
+            <div class="panel__line panel__line--thin"></div>
+            <div class="panel__line"></div>
+            <p class="panel__text">qì · 气</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUESTRA INSTITUCIÓN -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="inst.title">Nuestra institución</h2>
+          <p class="muted" data-i18n="inst.subtitle">
+            Qué hacemos y por qué existe este proyecto.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 data-i18n="inst.missionTitle">Misión</h3>
+            <p data-i18n="inst.missionBody">
+              Difundir y enseñar zhìnéng qìgōng en español e inglés para personas de todas las edades, y desarrollar proyectos
+              de investigación con instituciones y empresas para demostrar efectos positivos de la meditación en mente,
+              emociones y cuerpo.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="inst.whatTitle">Qué encontrarás aquí</h3>
+            <ul class="list">
+              <li data-i18n="inst.b1">Explicación clara y accesible del qì y zhìnéng qìgōng.</li>
+              <li data-i18n="inst.b2">Eventos en línea y presenciales (México y China).</li>
+              <li data-i18n="inst.b3">Investigación científica: artículos, enlaces y PDFs descargables.</li>
+              <li data-i18n="inst.b4">Multimedia: entrevistas, congresos y videos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LA CIENCIA DEL QÌ -->
+    <section class="section" id="ciencia">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="science.title">La ciencia del qì</h2>
+          <p class="muted" data-i18n="science.subtitle">
+            Fundamentos y beneficios de la práctica.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <h3 data-i18n="science.qiTitle">¿Qué es el qì 气?</h3>
+            <p data-i18n="science.qiBody">
+              El qì se refiere a la partícula más pequeña que forma todo en el universo. Desde hace miles de años,
+              maestros chinos observaron que la mente puede reunir, dirigir y transformar el qì; trabajar con él se llama qìgōng.
+            </p>
+            <p class="muted small" data-i18n="science.qiNote">
+              Nota: Este sitio integra divulgación y referencias científicas. No sustituye asesoría médica.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="science.znTitle">¿Qué es zhìnéng qìgōng?</h3>
+            <p data-i18n="science.znBody">
+              En los años 80, el Dr. Páng He Ming desarrolló zhìnéng qìgōng. La práctica incluye meditaciones,
+              movimientos, sonidos y experimentos con el qì: aumenta su abundancia, reduce bloqueos y fortalece funciones.
+            </p>
+          </article>
+        </div>
+
+        <div class="card card--soft">
+          <h3 data-i18n="science.benefitsTitle">Beneficios reportados</h3>
+          <div class="grid grid--3">
+            <ul class="list">
+              <li data-i18n="science.b1">Fortalece el sistema inmune.</li>
+              <li data-i18n="science.b2">Disminuye estrés y depresión.</li>
+              <li data-i18n="science.b3">Mejora atención y memoria.</li>
+            </ul>
+            <ul class="list">
+              <li data-i18n="science.b4">Incrementa creatividad.</li>
+              <li data-i18n="science.b5">Mejora condición física.</li>
+              <li data-i18n="science.b6">Acelera recuperación.</li>
+            </ul>
+            <ul class="list">
+              <li data-i18n="science.b7">Mejora calidad de vida.</li>
+              <li data-i18n="science.b8">Mejora tiempo de reacción.</li>
+              <li data-i18n="science.b9">Corrige posturas.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="sourceNote">
+          Contenido basado en la información proporcionada por “La Ciencia del qì”. :contentReference[oaicite:2]{index=2}
+        </p>
+      </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <section class="section" id="eventos">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="events.title">Eventos</h2>
+          <p class="muted" data-i18n="events.subtitle">
+            Talleres en línea y presenciales (México y China).
+          </p>
+        </div>
+
+        <div class="toolbar">
+          <input id="eventSearch" class="input" type="search" placeholder="Buscar eventos…" />
+          <select id="eventFilter" class="select" aria-label="Filtrar eventos">
+            <option value="all" data-i18n="events.filterAll">Todos</option>
+            <option value="online" data-i18n="events.filterOnline">En línea</option>
+            <option value="inperson" data-i18n="events.filterInPerson">Presenciales</option>
+          </select>
+        </div>
+
+        <div id="eventsList" class="cards"></div>
+
+        <p class="muted small">
+          (Puedes editar los eventos en <code>assets/data/content.json</code>).
+        </p>
+      </div>
+    </section>
+
+    <!-- INVESTIGACIÓN -->
+    <section class="section" id="investigacion">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="research.title">Investigación científica</h2>
+          <p class="muted" data-i18n="research.subtitle">
+            Artículos publicados, proyectos en proceso y recursos descargables (PDF/enlaces).
+          </p>
+        </div>
+
+        <div class="toolbar">
+          <input id="paperSearch" class="input" type="search" placeholder="Buscar por año, autor o tema…" />
+          <select id="paperFilter" class="select" aria-label="Filtrar investigación">
+            <option value="all" data-i18n="research.filterAll">Todos</option>
+            <option value="published" data-i18n="research.filterPublished">Publicados</option>
+            <option value="inprocess" data-i18n="research.filterInProcess">En proceso</option>
+            <option value="unpublished" data-i18n="research.filterUnpublished">Sin publicar</option>
+          </select>
+        </div>
+
+        <div id="papersList" class="cards"></div>
+
+        <div class="card card--soft">
+          <h3 data-i18n="research.downloadTitle">Descargas</h3>
+          <p class="muted" data-i18n="research.downloadBody">
+            Sube tus PDFs a <code>/assets/pdf/</code> y enlázalos desde el archivo de contenido. El botón “PDF” descargará el documento.
+          </p>
+        </div>
+
+        <p class="sourceNote">
+          Lista inicial de artículos/proyectos basada en el documento proporcionado. :contentReference[oaicite:3]{index=3}
+        </p>
+      </div>
+    </section>
+
+    <!-- TU INSTRUCTORA -->
+    <section class="section" id="instructora">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="instructor.title">Tu instructora</h2>
+          <p class="muted" data-i18n="instructor.subtitle">Formación, experiencia y trayectoria.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 data-i18n="instructor.name">Maestra Citlalli Álvarez</h3>
+            <p data-i18n="instructor.bio1">
+              Licenciatura en Biología (UNAM) y Maestría en Ciencias (Dalhousie University, Canadá).
+              Inició como practicante en 2011 y se certificó como instructora en 2015 en Beijing Wisdom Healing Center (China).
+            </p>
+            <p data-i18n="instructor.bio2">
+              Ha impartido talleres presenciales y en línea; colabora con maestros chinos y realiza proyectos de investigación científica.
+              Ha publicado artículos de divulgación y estudios en revistas internacionales.
+            </p>
+          </div>
+
+          <div class="card card--soft">
+            <h3 data-i18n="instructor.highlightsTitle">Resumen</h3>
+            <ul class="list">
+              <li data-i18n="instructor.h1">10+ años en divulgación científica.</li>
+              <li data-i18n="instructor.h2">Certificación como instructora (2015).</li>
+              <li data-i18n="instructor.h3">Proyectos de investigación y publicaciones.</li>
+              <li data-i18n="instructor.h4">Talleres en ES / EN.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="sourceNote">
+          Biografía basada en el documento de “Tu instructora”. :contentReference[oaicite:4]{index=4}
+        </p>
+      </div>
+    </section>
+
+    <!-- EMPIEZA HOY -->
+    <section class="section" id="empieza">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="start.title">Empieza hoy a practicar</h2>
+          <p class="muted" data-i18n="start.subtitle">Teoría y meditaciones gratuitas para comenzar.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 data-i18n="start.freeTitle">Meditaciones gratuitas</h3>
+            <p data-i18n="start.freeBody">
+              Aquí va la liga al canal de YouTube con meditaciones gratuitas (puedes cambiarla en el contenido).
+            </p>
+            <a class="btn btn--ghost" id="youtubeLink" target="_blank" rel="noopener" href="#">
+              YouTube
+            </a>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="start.coursesTitle">Cursos e inscripción</h3>
+            <p data-i18n="start.coursesBody">
+              Puedes mostrar cursos presenciales (México/China) y en línea. Si deseas, habilitamos inscripción vía formulario.
+            </p>
+
+            <form class="form" id="signupForm">
+              <div class="form__row">
+                <label class="label" for="name" data-i18n="form.name">Nombre</label>
+                <input class="input" id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+
+              <div class="form__row">
+                <label class="label" for="email" data-i18n="form.email">Correo</label>
+                <input class="input" id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+
+              <div class="form__row">
+                <label class="label" for="interest" data-i18n="form.interest">Interés</label>
+                <select class="select" id="interest" name="interest">
+                  <option value="online" data-i18n="form.optOnline">Curso en línea</option>
+                  <option value="inperson" data-i18n="form.optInPerson">Presencial</option>
+                  <option value="research" data-i18n="form.optResearch">Investigación</option>
+                </select>
+              </div>
+
+              <button class="btn" type="submit" data-i18n="form.submit">Enviar</button>
+              <p class="muted small" id="formMsg" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+        <p class="sourceNote">
+          “Teoría y meditaciones gratuitas” y enfoque de difusión basados en el documento. :contentReference[oaicite:5]{index=5}
+        </p>
+      </div>
+    </section>
+
+    <!-- MULTIMEDIA -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="media.title">Multimedia</h2>
+          <p class="muted" data-i18n="media.subtitle">Congresos, entrevistas y videos.</p>
+        </div>
+
+        <div id="mediaList" class="cards"></div>
+        <p class="muted small">(Edita la galería en <code>assets/data/content.json</code>.)</p>
+      </div>
+    </section>
+
+    <!-- CONTACTO / NEWSLETTER -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="contact.title">Contacto</h2>
+          <p class="muted" data-i18n="contact.subtitle">
+            Escríbenos o suscríbete al boletín.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 data-i18n="contact.directTitle">Contacto directo</h3>
+            <p class="muted">
+              <span data-i18n="contact.person">Persona de contacto</span>:
+              <strong id="contactName"></strong>
+            </p>
+            <p class="muted">
+              Email: <a id="contactEmail" href="#"></a><br />
+              WhatsApp: <a id="contactPhone" href="#"></a>
+            </p>
+
+            <div class="social">
+              <a id="socialYoutube" class="pill pill--link" target="_blank" rel="noopener">YouTube</a>
+              <a id="socialInstagram" class="pill pill--link" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="contact.newsTitle">Newsletter</h3>
+            <p class="muted" data-i18n="contact.newsBody">
+              Recibe novedades de cursos, eventos y artículos.
+            </p>
+
+            <form class="form" id="newsletterForm">
+              <div class="form__row">
+                <label class="label" for="newsEmail" data-i18n="form.email">Correo</label>
+                <input class="input" id="newsEmail" name="newsEmail" type="email" required />
+              </div>
+              <button class="btn btn--ghost" type="submit" data-i18n="form.subscribe">Suscribirme</button>
+              <p class="muted small" id="newsMsg" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+        <p class="sourceNote">
+          Contacto/redes/newsletter según el cuestionario del proyecto. :contentReference[oaicite:6]{index=6} :contentReference[oaicite:7]{index=7}
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted small">© <span id="year"></span> La Ciencia del qì</p>
+        <p class="muted small">
+          <a href="#inicio" data-i18n="footer.top">Volver arriba</a>
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
+
